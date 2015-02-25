@@ -19,8 +19,8 @@ main_bte.m calls the main routines of the code in the following order:
   4. plot_*.m: routines to plot and generate figures of interest. 
 
 calibration_bte.m and distance_bte.m allow for an indirect inference algorithm to estimate parameters of interest. In particular:
-- calibration_bte.m: calls a genetic algorithm routine to minimize a distance metric between data and model-based moments.
-- distance_bte.m: calls main_bte.m and computes the distance metric to be minimized.  
+	- calibration_bte.m: calls a genetic algorithm routine to minimize a distance metric between data and model-based moments.
+	- distance_bte.m: calls main_bte.m and computes the distance metric to be minimized.  
 
 
 Brief description of subroutines
@@ -31,7 +31,7 @@ Brief description of subroutines
 	- tauchen_grid.m: constructs grids for exogenous variables. 
 	- pi_tilda.m: computes expected payoff to a match.
 	- policy_h.m: computes optimal search intensity at home (policy functions from FOC taking as given the output from pi_tilda payoff). 
-	— policy_f_bte: analogous of policy_h.m for the foreign market. 
+	- policy_f_bte: analogous of policy_h.m for the foreign market. 
 
 ~ trajec_bte.m:
 	- dis_traj.m: generates exogenous shocks trajectories and maps them to a grid.
