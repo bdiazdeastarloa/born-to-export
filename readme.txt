@@ -1,4 +1,3 @@
-
 MATLAB code for:
 Born to Export: Understanding Export Growth in Bangladesh’s Apparel and Textiles Industry,
 by Diaz de Astarloa, Eaton, Krishna, Roberts, Rodríguez-Clare, and Tybout.
@@ -27,7 +26,14 @@ calibration_bte.m and distance_bte.m allow for an indirect inference algorithm t
 Brief description of subroutines
 ————————————————————————————————
 ~ solve_bte.m:
-	- hazz_nospill.m: calculates posterior beliefs about product appeal. 	- tauchen.m: computes transition densities and grids of exogenous variables.
-	- tauchen_grid.m: constructs grids for exogenous variables. 	- pi_tilda.m: computes expected payoff to a match.	- policy_h.m: computes optimal search intensity at home (policy functions from FOC taking as given the output from pi_tilda payoff). 	— policy_f_bte: analogous of policy_h.m for the foreign market. ~ trajec_bte.m:	- dis_traj.m: generates exogenous shocks trajectories and maps them to a grid.
+	- hazz_nospill.m: calculates posterior beliefs about product appeal. 
+	- tauchen.m: computes transition densities and grids of exogenous variables.
+	- tauchen_grid.m: constructs grids for exogenous variables. 
+	- pi_tilda.m: computes expected payoff to a match.
+	- policy_h.m: computes optimal search intensity at home (policy functions from FOC taking as given the output from pi_tilda payoff). 
+	— policy_f_bte: analogous of policy_h.m for the foreign market. 
+
+~ trajec_bte.m:
+	- dis_traj.m: generates exogenous shocks trajectories and maps them to a grid.
 	- brooks.m: computes Brooks tables.
 	- quant_dur.m: duration of matched by quantiles of sales.
